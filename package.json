@@ -4,7 +4,7 @@
 	"description": "Grunt plugin that interpolates template files with any data you provide and saves the result to another file.",
 	"author": {
 		"name": "Mathias Bynens",
-		"web": "http://mathiasbynens.be/"
+		"url": "http://mathiasbynens.be/"
 	},
 	"homepage": "http://git.io/grunt-template",
 	"licenses": [
