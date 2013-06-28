@@ -21,9 +21,11 @@ module.exports = function(grunt) {
 				// Read file source.
 				return grunt.file.read(filePath);
 			}).join('\n');
-
+			var data = typeof options.data == 'function' ?
+				options.data() :
+				options.data;
 			var result = grunt.template.process(src, {
-				'data': options.data
+				'data': data
 			});
 
 			// Write the destination file

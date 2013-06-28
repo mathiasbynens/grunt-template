@@ -59,5 +59,13 @@ exports.template = {
 			'Multiple template files',
 			test
 		);
+	},
+	'test-5': function(test) {
+		compare(
+			'tmp/test-5.js',
+			'tests/expected/test-5.js',
+			'Lazily evaluated function that returns template data',
+			test
+		);
 	}
 };

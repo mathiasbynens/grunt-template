@@ -49,6 +49,20 @@ module.exports = function(grunt) {
 				'files': {
 					'tmp/test-4.js': ['tests/fixtures/test-4-*.js']
 				},
+			},
+			'test-5': {
+				'options': {
+					'data': function() {
+						return {
+							'root': 'lolwat',
+							'rootValue': 'this',
+							'foo': '/regexp?/g'
+						};
+					}
+				},
+				'files': {
+					'tmp/test-5.js': ['tests/fixtures/test-5.js']
+				},
 			}
 		},
 
