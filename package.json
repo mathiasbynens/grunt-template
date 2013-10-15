@@ -11,10 +11,6 @@
 		{
 			"type": "MIT",
 			"url": "http://mths.be/mit"
-		},
-		{
-			"type": "GPL",
-			"url": "http://mths.be/gpl"
 		}
 	],
 	"repository": {
@@ -24,6 +20,10 @@
 	"bugs": {
 		"url": "https://github.com/mathiasbynens/grunt-template/issues"
 	},
+	"files": [
+		"LICENSE-MIT.txt",
+		"tasks/"
+	],
 	"directories": {
 		"test": "tests"
 	},
@@ -32,8 +32,8 @@
 	},
 	"dependencies": {},
 	"devDependencies": {
-		"grunt-contrib-clean": "~0.4.1",
-		"grunt-contrib-nodeunit": "~0.2.0",
+		"grunt-contrib-clean": "~0.5.0",
+		"grunt-contrib-nodeunit": "~0.2.1",
 		"grunt": "~0.4.1"
 	},
 	"peerDependencies": {

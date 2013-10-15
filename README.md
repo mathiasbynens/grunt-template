@@ -114,4 +114,4 @@ grunt.initConfig({
 
 ## License
 
-grunt-template is dual licensed under the [MIT](http://mths.be/mit) and [GPL](http://mths.be/gpl) licenses.
+grunt-template is available under the [MIT](http://mths.be/mit) license.
