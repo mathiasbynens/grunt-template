@@ -14,7 +14,7 @@ If you haven’t used [Grunt](http://gruntjs.com/) before, be sure to check out 
 npm install grunt-template --save-dev
 ```
 
-One the plugin has been installed, it may be enabled inside your Gruntfile with this line of JavaScript:
+Once the plugin has been installed, it may be enabled inside your Gruntfile with this line of JavaScript:
 
 ```js
 grunt.loadNpmTasks('grunt-template');
@@ -79,22 +79,28 @@ Here’s a practical example of grunt-template. Here, the file `src/post.html.tp
 #### `Gruntfile.js`
 
 ```js
-grunt.initConfig({
-	'template': {
-		'process-html-template': {
-			'options': {
-				'data': {
-					'title': 'My blog post',
-					'author': 'Mathias Bynens',
-					'content': 'Lorem ipsum dolor sit amet.'
+module.exports = function(grunt) {
+	grunt.initConfig({
+		'template': {
+			'process-html-template': {
+				'options': {
+					'data': {
+						'title': 'My blog post',
+						'author': 'Mathias Bynens',
+						'content': 'Lorem ipsum dolor sit amet.'
+					}
+				},
+				'files': {
+					'dist/post.html': ['src/post.html.tpl']
 				}
-			},
-			'files': {
-				'dist/post.html': ['src/post.html.tpl']
 			}
 		}
-	}
-});
+	});
+	grunt.loadNpmTasks('grunt-template');
+	grunt.registerTask('default', [
+		'template'
+	]);
+};
 ```
 
 #### `dist/post.html` (the end result)
