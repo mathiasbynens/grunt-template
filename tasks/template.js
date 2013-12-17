@@ -17,14 +17,19 @@ module.exports = function(grunt) {
 				} else {
 					return true;
 				}
-			}).map(function(filePath) {
+			});
+			if (!src.length) {
+				grunt.log.warn('Destination `' + file.dest + '` not written because `src` files were empty.');
+				return;
+			}
+			var template = src.map(function(filePath) {
 				// Read file source.
 				return grunt.file.read(filePath);
 			}).join('\n');
 			var data = typeof options.data == 'function' ?
 				options.data() :
 				options.data;
-			var result = grunt.template.process(src, {
+			var result = grunt.template.process(template, {
 				'data': data
 			});
 
