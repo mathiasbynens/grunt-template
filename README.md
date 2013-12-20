@@ -112,6 +112,11 @@ module.exports = function(grunt) {
 <p>Lorem ipsum dolor sit amet.</p>
 ```
 
+
+## Notes
+
+If you use [gulp](https://github.com/wearefractal/gulp) instead of Grunt, but want to perform a similar task, use [gulp-template](https://github.com/sindresorhus/gulp-template).
+
 ## Author
 
 | [![twitter/mathias](http://gravatar.com/avatar/24e08a9ea84deb17ae121074d0f17125?s=70)](http://twitter.com/mathias "Follow @mathias on Twitter") |
