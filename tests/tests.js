@@ -67,5 +67,21 @@ exports.template = {
 			'Lazily evaluated function that returns template data',
 			test
 		);
+	},
+	'test-6': function(test) {
+		compare(
+			'tmp/test-6.js',
+			'tests/expected/test-6.js',
+			'Custom delimiter passing a string',
+			test
+		);
+	},
+	'test-7': function(test) {
+		compare(
+			'tmp/test-7.js',
+			'tests/expected/test-7.js',
+			'Custom delimiter passing a function',
+			test
+		);
 	}
 };

@@ -1,5 +1,7 @@
 module.exports = function(grunt) {
 
+	grunt.template.addDelimiters('handlebars-like-delimiters', '{{', '}}')
+
 	grunt.initConfig({
 
 		'clean': {
@@ -63,6 +65,38 @@ module.exports = function(grunt) {
 				'files': {
 					'tmp/test-5.js': ['tests/fixtures/test-5.js']
 				},
+			},
+			'test-6': {
+				'options': {
+					'data': function() {
+						return {
+							'title': 'Custom delimiters support (passing a string)',
+							'author': 'grunt-template',
+							'content': 'Custom delimiters defined with <a href="http://gruntjs.com/api/grunt.template#grunt.template.adddelimiters"><code>grunt.template.addDelimiters</code></a> are supported too.'
+						};
+					},
+					'delimiters': 'handlebars-like-delimiters'
+				},
+				'files': {
+					'tmp/test-6.js': ['tests/fixtures/test-6.js']
+				}
+			},
+			'test-7': {
+				'options': {
+					'data': function() {
+						return {
+							'title': 'Custom delimiters support (passing a function)',
+							'author': 'grunt-template',
+							'content': 'Custom delimiters defined with <a href="http://gruntjs.com/api/grunt.template#grunt.template.adddelimiters"><code>grunt.template.addDelimiters</code></a> are supported too.'
+						};
+					},
+					'delimiters': function() {
+						return 'handlebars-like-delimiters';
+					}
+				},
+				'files': {
+					'tmp/test-7.js': ['tests/fixtures/test-7.js']
+				}
 			}
 		},
 
