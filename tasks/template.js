@@ -33,7 +33,7 @@ module.exports = function(grunt) {
 			};
 
 			if (options.delimiters) {
-				templateOptions['delimiters'] = typeof options.delimiters == 'function' ? 
+				templateOptions.delimiters = typeof options.delimiters == 'function' ? 
 					options.delimiters() : 
 					options.delimiters;
 			}
