@@ -46,7 +46,7 @@ grunt.initConfig({
 
 ### Options
 
-The `options` property accepts two options:
+The `options` property accepts the following options:
 
 #### `data`
 Type: `Object` or `Function`
@@ -58,8 +58,8 @@ This object contains the data that will be used while interpolating the template
 Type: `String` or `Function`
 Default: `config`
 
-This is the name of the delimiters that will be used to interpolate and evaluate code. A function that returns the delimiters name can be used too.
-This property is useful when you want to generate JSP/ERB like code and you need the default interpolation delimiters to be '<%' and '%>'. See below for an example.
+This is the delimiters' name that will be used to interpolate and evaluate code. A function that returns this name can be used too.
+This property is useful when you want to generate JSP/ERB like code and you need the default interpolation delimiters to be `<%` and `%>`. See below for an example.
 
 ### Template syntax
 
