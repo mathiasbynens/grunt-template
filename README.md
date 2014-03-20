@@ -1,4 +1,4 @@
-# grunt-template [![Build status](https://travis-ci.org/mathiasbynens/grunt-template.png?branch=master)](https://travis-ci.org/mathiasbynens/grunt-template) [![Dependency status](https://gemnasium.com/mathiasbynens/grunt-template.png)](https://gemnasium.com/mathiasbynens/grunt-template)
+# grunt-template [![Build status](https://travis-ci.org/mathiasbynens/grunt-template.svg?branch=master)](https://travis-ci.org/mathiasbynens/grunt-template) [![Dependency status](https://gemnasium.com/mathiasbynens/grunt-template.svg)](https://gemnasium.com/mathiasbynens/grunt-template)
 
 This Grunt plugin interpolates template files with any data you provide and saves the result to another file.
 
@@ -164,7 +164,7 @@ If you use [gulp](https://github.com/wearefractal/gulp) instead of Grunt, but wa
 
 ## Author
 
-| [![twitter/mathias](http://gravatar.com/avatar/24e08a9ea84deb17ae121074d0f17125?s=70)](http://twitter.com/mathias "Follow @mathias on Twitter") |
+| [![twitter/mathias](https://gravatar.com/avatar/24e08a9ea84deb17ae121074d0f17125?s=70)](https://twitter.com/mathias "Follow @mathias on Twitter") |
 |---|
 | [Mathias Bynens](http://mathiasbynens.be/) |
 
