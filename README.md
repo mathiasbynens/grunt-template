@@ -2,7 +2,7 @@
 
 This Grunt plugin interpolates template files with any data you provide and saves the result to another file.
 
-Since [`grunt.template.process`](https://github.com/gruntjs/grunt/wiki/grunt.template#wiki-grunt-template-process) is used for the templating, this Grunt plugin is very lightweight and doesn’t have any dependencies (other than Grunt itself).
+Since [`grunt.template.process`](http://gruntjs.com/api/grunt.template#grunt.template.process) is used for the templating, this Grunt plugin is very lightweight and doesn’t have any dependencies (other than Grunt itself).
 
 ## Getting started
 
@@ -63,7 +63,7 @@ This property is useful when you want to generate JSP/ERB like code and you need
 
 ### Template syntax
 
-Under the hood, grunt-template uses [`grunt.template.process`](https://github.com/gruntjs/grunt/wiki/grunt.template#wiki-grunt-template-process), which in turn relies on [Lo-Dash’s `_.template()` method](http://lodash.com/docs#template). Here’s a quick reminder of the default delimiters:
+Under the hood, grunt-template uses [`grunt.template.process`](http://gruntjs.com/api/grunt.template#grunt.template.process), which in turn relies on [Lo-Dash’s `_.template()` method](http://lodash.com/docs#template). Here’s a quick reminder of the default delimiters:
 
 * Use `<%= value %>` to interpolate any values directly, i.e. inject them into the template without any modifications.
 * Use `<%- value %>` to interpolate an HTML-escaped version of a given value. Use this if you’re generating an HTML file and you’re using unknown input data.
