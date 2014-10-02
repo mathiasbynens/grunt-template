@@ -4,29 +4,19 @@
 	"description": "Grunt plugin that interpolates template files with any data you provide and saves the result to another file.",
 	"author": {
 		"name": "Mathias Bynens",
-		"url": "http://mathiasbynens.be/"
+		"url": "https://mathiasbynens.be/"
 	},
 	"homepage": "http://git.io/grunt-template",
-	"licenses": [
-		{
-			"type": "MIT",
-			"url": "http://mths.be/mit"
-		}
-	],
+	"license": "MIT",
 	"repository": {
 		"type": "git",
 		"url": "git://github.com/mathiasbynens/grunt-template.git"
 	},
-	"bugs": {
-		"url": "https://github.com/mathiasbynens/grunt-template/issues"
-	},
+	"bugs": "https://github.com/mathiasbynens/grunt-template/issues",
 	"files": [
 		"LICENSE-MIT.txt",
 		"tasks/"
 	],
-	"directories": {
-		"test": "tests"
-	},
 	"scripts": {
 		"test": "grunt test"
 	},
