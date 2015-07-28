@@ -36,7 +36,7 @@ module.exports = function(grunt) {
 
 			var templateOptions = {
 				'data': typeof options.data == 'function' ?
-					options.data() :
+					options.data(file.dest) :
 					options.data
 			};
 
