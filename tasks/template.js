@@ -46,13 +46,16 @@ module.exports = function(grunt) {
 					options.delimiters;
 			}
 
+			// Print a success message
+			grunt.log.write('Processing file `' + file.dest + '`...');
+
 			var result = grunt.template.process(template, templateOptions);
 
 			// Write the destination file
 			grunt.file.write(file.dest, result);
 
 			// Print a success message
-			grunt.log.writeln('File `' + file.dest + '` created.');
+			grunt.log.writeln('done !');
 		});
 	});
 
