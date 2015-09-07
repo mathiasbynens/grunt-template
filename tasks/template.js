@@ -47,7 +47,7 @@ module.exports = function(grunt) {
 			}
 
 			// Print a success message
-			grunt.log.write('Processing file `' + file.dest + '`...');
+			grunt.log.write('Processing file `' + file.dest + '`…');
 
 			var result = grunt.template.process(template, templateOptions);
 
@@ -55,7 +55,7 @@ module.exports = function(grunt) {
 			grunt.file.write(file.dest, result);
 
 			// Print a success message
-			grunt.log.writeln('done !');
+			grunt.log.writeln('done!');
 		});
 	});
 
