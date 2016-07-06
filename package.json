@@ -1,6 +1,6 @@
 {
 	"name": "grunt-template",
-	"version": "0.2.3",
+	"version": "1.0.0",
 	"description": "Grunt plugin that interpolates template files with any data you provide and saves the result to another file.",
 	"author": {
 		"name": "Mathias Bynens",
